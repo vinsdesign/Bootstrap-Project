@@ -9,3 +9,9 @@ fetch("../../pages/layout/main.html")
   .then((data) => {
     document.getElementById("main-content").innerHTML = data;
   });
+
+  fetch("../../pages/layout/main-footer.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("main-footer").innerHTML = data;
+  });
