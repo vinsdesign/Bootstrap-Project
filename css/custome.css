@@ -13,3 +13,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.galeri-info {
+  width: 1296px;
+}
+.galeri-tengah {
+  height: 343px;
+}
