@@ -15,3 +15,10 @@ fetch("../../pages/layout/main.html")
   .then((data) => {
     document.getElementById("main-footer").innerHTML = data;
   });
+
+
+  fetch("../../pages/layout/content-center.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("content-center").innerHTML = data;
+  });
