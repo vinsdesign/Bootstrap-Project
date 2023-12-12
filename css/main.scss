@@ -1,0 +1,44 @@
+.background-card {
+
+    margin-top: 100px;
+    background-image: url("../images/Rectangle 25.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 585px;
+    margin: auto;
+    top: 50%; // move down 50% of container
+    transform: translateY(-50%); // move up 50% of it's own height  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      pointer-events: none; /* Hanya memengaruhi latar belakang */
+      z-index: -1; /* Menempatkan pseudo-element di belakang konten */
+    }
+  }
+  
+
+  .text-content{
+    color: #FFF;
+
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 132.52%;
+  }
+  .h1-content-center{
+    color: #FFF;
+
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 132.52%; /* 63.61px */
+
+  }

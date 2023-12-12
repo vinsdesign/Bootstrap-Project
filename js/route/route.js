@@ -20,5 +20,5 @@ fetch("../../pages/layout/main.html")
   fetch("../../pages/layout/content-center.html")
   .then((response) => response.text())
   .then((data) => {
-    document.getElementById("content-center").innerHTML = data;
+    document.getElementById("content-profile").innerHTML = data;
   });
